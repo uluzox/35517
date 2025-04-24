@@ -1,1 +1,19 @@
-{}
+{
+  "enabledManagers": [
+    "terraform",
+    "terraform-version"
+  ],
+  "packageRules": [
+    {
+      "description": [
+        "Use OpenTofu registry instead of the Terraform registry"
+      ],
+      "matchDatasources": [
+        "terraform-provider"
+      ],
+      "registryUrls": [
+        "https://registry.opentofu.org"
+      ]
+    }
+  ]
+}
